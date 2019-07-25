@@ -200,6 +200,28 @@ h1 {
 
 #c7 {
 
-   
+
+    background-color: lightgray;
+}
+
+#a8, #b8 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+#a8 ,#b8{
+    float: left;
+}
+#b8{
+
+    background-color: pink;
+}
+
+#c8 {
+    clear:both;
+    margin-top:10px;
     background-color: lightgray;
 }
