@@ -181,3 +181,25 @@ h1 {
     margin-left: 200px;
     background-color: lightgray;
 }
+
+
+#a7, #b7 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+#a7 {
+    float: left;
+}
+#b7{
+    background-color: pink;
+}
+
+#c7 {
+
+   
+    background-color: lightgray;
+}
