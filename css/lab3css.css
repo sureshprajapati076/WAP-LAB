@@ -83,3 +83,98 @@ h1 {
 #b2 { background-color: pink; float:right;clear:left;}
 #c2 { background-color: lightgray; clear: left;
     text-align: right;}
+
+
+
+#a3, #b3 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+}
+
+#a3 {
+    float: left;
+    background-color: lightblue;
+}
+#b3 {
+    float: right;
+    clear: left;
+    background-color: pink;
+}
+#c3 {
+    text-align: right;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+}
+
+
+
+#a4, #b4 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+#a4 {
+    float: right;
+}
+#b4 {
+    float: left;
+    background-color: pink;
+}
+#c4 {
+    float: left;
+    text-align: center;
+    width: 500px;
+    background-color: lightgray;
+}
+
+#a5, #b5 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+#a5 {
+    float: right;
+}
+#b5 {
+    position: relative;
+    float:right;
+    top: 50px;
+    right: -10px;
+    background-color: pink;
+}
+#c5 {
+    clear: right;
+    text-align: center;
+    margin-right: 100px;
+    background-color: lightgray;
+}
+
+
+#a6, #b6 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+#a6,#b6 {
+    float: left;
+}
+
+#c5 {
+
+    margin-left: 200px;
+    background-color: lightgray;
+}
