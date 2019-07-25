@@ -172,8 +172,11 @@ h1 {
 #a6,#b6 {
     float: left;
 }
+#b6{
+    background-color: pink;
+}
 
-#c5 {
+#c6 {
 
     margin-left: 200px;
     background-color: lightgray;
