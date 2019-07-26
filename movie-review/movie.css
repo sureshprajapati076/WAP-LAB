@@ -17,14 +17,15 @@ img.round-corners{
 
 
 
-/* Header/logo Title */
 .header {
-    height: 50px;
+
     background-image: url("images/bannerbg.png");
 }
 
 .header>div{
-    width:60%;
+    width: 795px;
+    height: 50px;
+    background-image: url("images/banner.png");
     margin:0 auto;
 }
 
@@ -148,7 +149,7 @@ img.round-corners{
     }
 
     .container,.header>div{
-        width: 50%;
+        width: 80%;
     }
 
 
