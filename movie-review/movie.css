@@ -121,6 +121,10 @@ img.round-corners{
 
 }
 
+p.comment{
+    font-weight: bold;
+}
+
 .rowComment img{
     display:block;
     float:left;
