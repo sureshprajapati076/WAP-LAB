@@ -10,6 +10,13 @@ body {
    background-image: url("images/background.png");
 }
 
+
+img.round-corners{
+    border-top-right-radius: 20px;
+}
+
+
+
 /* Header/logo Title */
 .header {
     height: 50px;
@@ -35,7 +42,7 @@ body {
 
     height: 83px;
 
-    border-top-left-radius: 20px;
+  
 }
 #ratingpercent{
     color:red;
@@ -69,6 +76,7 @@ body {
 .aside {
     flex: 250px;
     background-color:#a2b964;
+    border-top-right-radius: 20px;
     box-sizing: border-box;
 }
 .aside dl dt{
