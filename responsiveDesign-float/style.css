@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1,.column2,.column3 {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+.column1{
+    background-color: red;
+}
+.column2{
+    background-color: blue;
+}
+.column3{
+    background-color: green;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 700px) {
+
+    .column1,.column2{
+        width:50%;
+    }
+    .column3{
+        width:100%;
+    }
+}
