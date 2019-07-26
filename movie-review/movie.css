@@ -156,6 +156,10 @@ p.comment{
         width: 80%;
     }
 
+    .header>div {
+        width: 636px;
+    }
+
 
 
 }
