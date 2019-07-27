@@ -7,27 +7,30 @@ body {
     font-size: 8pt;
     margin: 0;
     padding: 0;
-   background-image: url("images/background.png");
+    background-image: url("images/background.png");
 }
 
 
 img.round-corners{
     border-top-right-radius: 20px;
 }
+img.round-corners-banner{
+    border-top-left-radius: 20px;
+}
 
 
 
 .header {
-       margin: 0 auto;
+    margin: 0 auto;
     width: 100%;
 
     background-image: url("images/bannerbg.png");
 }
 
-.header>div{    
+.header>div{
     width: 70%;
     height: 50px;
-   
+
     background-image: url("images/banner.png");
     margin:0 auto;
 }
@@ -42,18 +45,17 @@ img.round-corners{
 }
 
 #movieRating{
+
+    border-top-left-radius: 20px;
     background-image: url("images/rbg.png");
-
     height: 83px;
-
-  
 }
 #ratingpercent{
     color:red;
     font-size: 48pt;
     font-weight: bold;
     position: relative;
-   bottom: 20px;
+    bottom: 20px;
 }
 .container{
     width:800px;
@@ -158,8 +160,14 @@ p.comment{
     .container{
         width: 80%;
     }
+    img.round-corners{
+        border-top-right-radius: 0px;
 
+    }
 
+    #movieRating {
+        border-top-right-radius: 20px;
+    }
 
 
 
