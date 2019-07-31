@@ -51,7 +51,7 @@
 
     }
 
-    console.log(listToArray({
+    console.log(listToArray({    //This is simple test to check if given list can be converted to array.
         value : 1,
         rest : {
             value : 2,
@@ -76,13 +76,17 @@
     console.log(prepend(10, prepend(20, null)));
 
     function nth(list, index) {
-        return listToArray(list)[index];
+        return listToArray(list)[index];   // I used this function listToArray() already written above so code re-use for me
+                                            // after that i got the index of that array to return.
+                                            // I have not checked for index out of bound condition
+                                            // I assumed index will be with in bound for simplicity
     }
 
-    function nthNextMethod(list, index) {
-
-        while (list !== null) {
-
+    function nthNextMethod(list, index) {       // This is same function() that works as nth()
+                                                // I went through while loop until list is not null
+                                                //every time i decreased index by 1 and updated list as next list
+        while (list !== null) {                 // when index===0 that's the data I was looking for.
+                                                // simply return list.value now.
             if (list.value !== undefined) {
 
                 if (index-- === 0) {
@@ -97,15 +101,15 @@
 
     function recursiveNth(list, index) {
 
-        if (index == 0)
+        if (index === 0)
 
             return list.value;
 
-        return recursiveNth(list.rest, --index);
+        return recursiveNth(list.rest, --index);    //This is simplest recursive I have found for this purpose
 
     }
 
-    console.log(recursiveNth(arrayToList([ 10, 20, 30 ]), 1));
+    console.log(recursiveNth(arrayToList([ 10, 20, 30 ]), 1));  //These are sample data from given assignment pdf file
 
     console.log(nth(arrayToList([ 10, 20, 30 ]), 1));
     console.log(nthNextMethod(arrayToList([ 10, 20, 30 ]), 1));
