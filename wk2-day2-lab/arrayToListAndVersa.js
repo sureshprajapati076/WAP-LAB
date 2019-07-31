@@ -110,7 +110,6 @@
     }
 
     console.log(recursiveNth(arrayToList([ 10, 20, 30 ]), 1));  //These are sample data from given assignment pdf file
-
     console.log(nth(arrayToList([ 10, 20, 30 ]), 1));
     console.log(nthNextMethod(arrayToList([ 10, 20, 30 ]), 1));
 
