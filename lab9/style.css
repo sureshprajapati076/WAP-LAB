@@ -9,6 +9,7 @@ div input {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    width:250px;
 }
 
 #qn-1 {background-color: #008CBA;} /* Blue */
@@ -28,4 +29,16 @@ div input {
 
 
 }
+@media screen and (max-width:560px){
+    .container{
+    
+        column-count:1;
+       
+    }
+ 
+}
+
+
+
+
 
