@@ -1,28 +1,29 @@
 (function () {
     "use strict";
     $(function () {
-        $(".boundary").mouseover(red);
-        $("#end").mouseover(end);
+        $(".boundary").mouseover(turnRed);
+        $("#end").mouseover(result);
         $("#gameArea").mouseleave(handleCheating);
         $("#start").click(reset);
     });
 
-    let win = false;
+    let disqualified = false;
+    let gameComplete = false;
 
-    function red() {
+    function turnRed() {
         $(".boundary").addClass("youlose");
         disqualified = true;
     }
 
-    function end() {
-        if (win)
+    function result() {
+        if (!disqualified)
             won();
         else lost();
     }
 
     function won() {
         $("#status").css("color", "green").html("You won!! :)   Click 'S' to play again");
-        win = true;
+        gameComplete = true;
     }
 
     function lost() {
@@ -30,19 +31,19 @@
         $("#status").css({
             "color": "red",
         });
-        
+        //document.getElementById("status").innerHTML = "You Lose !!";
     }
 
     function reset() {
         $(".boundary").removeClass('youlose');
-        
-        win = false;
+        disqualified = false;
+        gameComplete = false;
         $("#status").html('Click the "S" to begin.').css("color", "black");
     }
 
     function handleCheating() {
-        if (!win) {
-            red();
+        if (!gameComplete) {
+            turnRed();
             lost();
         }
 
