@@ -6,18 +6,37 @@ $(function(){
 	
 	
 	$('#start').click(showCircle);
-	
+	$('#stop').click(reset);
+
+	function reset() {
+		$('#width').removeAttr("disabled");
+		$('#number').removeAttr("disabled");
+
+		$('#rate').removeAttr("disabled");
+		$('.circle').remove();
+		$('#start').removeAttr("disabled");
+		$('#stop').attr("disabled","disabled");
+		$('#width').val(50);
+		$('#growAmt').val(1);
+		$('#rate').val(350);
+		$('#number').val(10);
+	}
 	
 	function showCircle(){
+		$('#width').attr("disabled","disabled");
+		$('#number').attr("disabled","disabled");
+
+		$('#rate').attr("disabled","disabled");
+		$('#stop').removeAttr("disabled");
+		$('#start').attr("disabled","disabled");
 
 
 		$('#result').text('Pop Out All Circles').css("background-color","#008CBA");;
 		let width=$('#width').val();
-	
-		let num=$('#number').val();
+
 
 		$('.circle').remove();
-		$('.circle').show().css({"height":width,"width":width,"top":"200px","left":"50%"});
+		$('.circle').show();
 
 		let count=parseInt($('#number').val());
 
@@ -25,19 +44,23 @@ $(function(){
 		var $newCircle = $('<div />').appendTo('body');
 		$newCircle.addClass("circle");
 		let col="rgb("+Math.floor(Math.random() * 255)+","+Math.floor(Math.random() * 255)+","+Math.floor(Math.random() * 255) +")";
-		$newCircle.css("background-color",col);
-		$newCircle.css("top",Math.random()*200);
-			$newCircle.css("left",Math.random()*200);
-		$newCircle.click(hide);
-		$newCircle.mouseenter(changeOpacity);
-		$newCircle.mouseleave(resetOpacity);
+		$newCircle.css({"background-color":col,
+						"top":Math.random()*200,
+						"left":Math.random()*200,
+						"height":width,
+						"width":width
+
+
+		});
+
+		$newCircle.click(hide).mouseenter(changeOpacity).mouseleave(resetOpacity);
 		}
 
 		//$(body).append($('<div class="circle"></div>'));
 
 
 
-		timerId=setInterval(grow,$('#rate').val());
+		timerId=setInterval(grow,parseInt($('#rate').val()));
 
 
 
@@ -65,8 +88,8 @@ if(countCirclePops===parseInt($('#number').val())){
 		for(let circle of circles) {
 
 			let newDiameter = parseInt($(circle).height()) + growAmt + "px";
-			let newLeft = parseInt($(circle).css("left")) - growAmt / 2 + "px";
-			let newTop = parseInt($(circle).css("top")) - growAmt / 2 + "px";
+			let newLeft = parseInt($(circle).css("left")) - growAmt /2 + "px";
+			let newTop = parseInt($(circle).css("top")) - growAmt /2 + "px";
 
 
 			$(circle).css("width", newDiameter);
