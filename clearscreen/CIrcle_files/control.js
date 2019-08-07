@@ -1,7 +1,7 @@
 $(function(){
+
 	"use strict";
 	let timerId=null;
-	
 
 	
 	
@@ -22,7 +22,11 @@ $(function(){
 		for(let i=0;i<count;i++){
 		var $newCircle = $('<div />').appendTo('body');
 		$newCircle.addClass("circle");
+		let col="rgb("+Math.floor(Math.random() * 255)+","+Math.floor(Math.random() * 255)+","+Math.floor(Math.random() * 255) +")";
+		$newCircle.css("background-color",col);
 		$newCircle.click(hide);
+		$newCircle.mouseenter(changeOpacity);
+		$newCircle.mouseleave(resetOpacity);
 		}
 
 		//$(body).append($('<div class="circle"></div>'));
@@ -32,7 +36,7 @@ $(function(){
 		timerId=setInterval(grow,$('#rate').val());
 
 
-		
+
 		
 		
 	}
@@ -77,6 +81,46 @@ function hide(evt){
 	
 	
 }
+
+let timerForOpacity;
+function changeOpacity(evt) {
+
+	 timerForOpacity=setInterval((evt)=>{
+										let currentOpacity=parseFloat($(this).css("opacity"));
+
+										//alert(currentOpacity);
+
+										let next=currentOpacity-0.1;
+										//let next=Number(currentOpacity).toFixed(2) - Number(0.01).toFixed(2);
+										//alert(Number(currentOpacity).toFixed(2));
+
+										$(this).css("opacity",next);
+
+
+										}
+
+
+
+
+
+
+
+
+
+		,200);
+
+
+
+}
+
+function resetOpacity(evt){
+	let t1=timerForOpacity;
+
+	clearInterval(t1);
+	$(this).css("opacity","1");
+
+}
+
 	
 	
 	
