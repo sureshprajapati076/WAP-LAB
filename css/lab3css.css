@@ -1,0 +1,225 @@
+.next,.prev{
+
+    float:right;
+    text-decoration: none;
+    font-size: 25pt;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#outer {
+    border: 2px dashed black;
+    overflow: hidden;
+    padding: 10px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 10px;
+    float: left;
+}
+.next {
+    clear: left;
+}
+
+ul {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+#container {
+    background-color: lightgray;
+    overflow: hidden;
+    padding: 10px;
+    width: 500px;
+}
+#column1, #column2 {
+    background-color: lightblue;
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+}
+h1 {
+    background-color: yellow;
+}
+#a, #b {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+}
+#a { background-color: lightblue; float:left;}
+#b { background-color: pink; float:right;}
+#c { background-color: lightgray; }
+
+#a1, #b1 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+}
+#a1 { background-color: lightblue; float:left;}
+#b1 { background-color: pink; float:right;clear: left;}
+#c1 { background-color: lightgray; }
+
+
+#a2, #b2 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+}
+#a2 { background-color: lightblue; float:left;}
+#b2 { background-color: pink; float:right;clear:left;}
+#c2 { background-color: lightgray; clear: left;
+    text-align: right;}
+
+
+
+#a3, #b3 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+}
+
+#a3 {
+    float: left;
+    background-color: lightblue;
+}
+#b3 {
+    float: right;
+    clear: left;
+    background-color: pink;
+}
+#c3 {
+    text-align: right;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+}
+
+
+
+#a4, #b4 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+#a4 {
+    float: right;
+}
+#b4 {
+    float: left;
+    background-color: pink;
+}
+#c4 {
+    float: left;
+    text-align: center;
+    width: 500px;
+    background-color: lightgray;
+}
+
+#a5, #b5 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+#a5 {
+    float: right;
+}
+#b5 {
+    position: relative;
+    float:right;
+    top: 50px;
+    right: -10px;
+    background-color: pink;
+}
+#c5 {
+    clear: right;
+    text-align: center;
+    margin-right: 100px;
+    background-color: lightgray;
+}
+
+
+#a6, #b6 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+#a6,#b6 {
+    float: left;
+}
+#b6{
+    background-color: pink;
+}
+
+#c6 {
+
+    margin-left: 200px;
+    background-color: lightgray;
+}
+
+
+#a7, #b7 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+#a7 {
+    float: left;
+}
+
+
+#c7 {
+
+
+    background-color: lightgray;
+}
+
+#a8, #b8 {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+#a8 ,#b8{
+    float: left;
+}
+#b8{
+
+    background-color: pink;
+}
+
+#c8 {
+    clear:both;
+    margin-top:10px;
+    background-color: lightgray;
+}

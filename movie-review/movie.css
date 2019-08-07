@@ -1,0 +1,174 @@
+
+/* Style the body */
+body {
+
+
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/background.png");
+}
+
+
+img.round-corners{
+    border-top-right-radius: 20px;
+}
+img.round-corners-banner{
+    border-top-left-radius: 20px;
+}
+
+
+
+.header {
+    margin: 0 auto;
+    width: 100%;
+
+    background-image: url("images/bannerbg.png");
+}
+
+.header>div{
+    width: 70%;
+    height: 50px;
+
+    background-image: url("images/banner.png");
+    margin:0 auto;
+}
+
+#movieName{
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px #999999;
+
+}
+
+#movieRating{
+
+    border-top-left-radius: 20px;
+    background-image: url("images/rbg.png");
+    height: 83px;
+}
+#ratingpercent{
+    color:red;
+    font-size: 48pt;
+    font-weight: bold;
+    position: relative;
+    bottom: 20px;
+}
+.container{
+    width:800px;
+    margin:0 auto;
+    border-radius: 20px;
+    border:4px solid gray;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.main {
+    flex: 550px;
+
+    box-sizing: border-box;
+}
+
+/* Main column */
+.aside {
+    flex: 250px;
+    background-color:#a2b964;
+    border-top-right-radius: 20px;
+    box-sizing: border-box;
+}
+.aside dl dt{
+    margin-left: 15px;
+    font-weight: bold;
+    margin-top: 10pt;
+}
+.aside dd{
+    margin-left: 25px;
+}
+.aside ul{
+    list-style:none;
+}
+
+
+
+.rowComment {
+    display: flex;
+    flex-wrap: wrap;
+}
+.leftComment {
+    flex: 47%;
+    box-sizing: border-box;
+}
+
+/* Main column */
+.rightComment {
+    flex: 47%;
+
+    box-sizing: border-box;
+}
+
+.rowComment p.comment {
+    width:85%;
+    display:inline-block;
+    padding: 8px;
+    margin:8px;
+    background-color: #E8DC9B;
+    border:2px solid gray;
+    border-radius: 10px;
+
+}
+
+p.comment{
+    font-weight: bold;
+}
+
+.rowComment img{
+    display:block;
+    float:left;
+
+
+}
+
+
+
+
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #a2b964;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .rowComment {
+        flex-direction: column;
+    }
+
+    .container{
+        width: 80%;
+    }
+    img.round-corners{
+        border-top-right-radius: 0px;
+
+    }
+
+    #movieRating {
+        border-top-right-radius: 20px;
+    }
+
+
+
+}
