@@ -12,3 +12,12 @@
 	cursor:crosshair;
 	opacity: 1;
 }
+#result{
+	width:100%;
+	height:auto;
+	background-color: #008CBA;
+	color:white;
+	text-align: center;
+	padding: 20px;
+	font-size: 16pt;
+}
