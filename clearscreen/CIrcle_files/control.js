@@ -11,7 +11,7 @@ $(function(){
 	function showCircle(){
 
 
-		$('#result').text('Pop Out All Circles');
+		$('#result').text('Pop Out All Circles').css("background-color","#008CBA");;
 		let width=$('#width').val();
 	
 		let num=$('#number').val();
@@ -57,8 +57,8 @@ $(function(){
 		let circles=$('.circle');
 
 if(countCirclePops===parseInt($('#number').val())){
-	$('#result').text('All Circles Poped in Time You win!!! Refresh page to load again!!!');
-	countCirclePops=-1;
+	$('#result').text('All Circles Poped in Time You win!!! Start Again to play again!!!').css("background-color","green");
+	countCirclePops=0;
 
 	clearInterval(timerId);
 }
