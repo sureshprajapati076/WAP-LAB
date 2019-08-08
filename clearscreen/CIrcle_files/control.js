@@ -31,7 +31,7 @@ $(function(){
 		$('#start').attr("disabled","disabled");
 
 
-		$('#result').text('Pop Out All Circles').css("background-color","#008CBA");;
+		$('#result').text('Pop Out All Circles').css("background-color","#008CBA");
 		let width=$('#width').val();
 
 
@@ -117,29 +117,19 @@ function hide(evt){
 
 function changeOpacity(evt) {
 
-	 timerForOpacity=setInterval((evt)=>{
-										let currentOpacity=parseFloat($(this).css("opacity"));
+	 timerForOpacity=setInterval((evt) => {
+		 let currentOpacity = parseFloat($(this).css("opacity"));
 
-										//alert(currentOpacity);
+	//alert(currentOpacity);
 
-										let next=currentOpacity-0.1;
-										//let next=Number(currentOpacity).toFixed(2) - Number(0.01).toFixed(2);
-										//alert(Number(currentOpacity).toFixed(2));
+	let next = currentOpacity - 0.1;
+	//let next=Number(currentOpacity).toFixed(2) - Number(0.01).toFixed(2);
+	//alert(Number(currentOpacity).toFixed(2));
 
-										$(this).css("opacity",next);
-
-
-										}
+	$(this).css("opacity", next);
 
 
-
-
-
-
-
-
-
-		,200);
+},200);
 
 
 
